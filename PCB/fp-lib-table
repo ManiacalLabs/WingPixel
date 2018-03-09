@@ -1,0 +1,11 @@
+(fp_lib_table
+  (lib (name FeatherWing)(type KiCad)(uri "$(KIPRJMOD)/lib/FeatherWing.pretty")(options "")(descr ""))
+  (lib (name APM_BarrelJack)(type KiCad)(uri "$(KIPRJMOD)/lib/APM_BarrelJack.pretty")(options "")(descr ""))
+  (lib (name Custom)(type KiCad)(uri "$(KIPRJMOD)/lib/Custom.pretty")(options "")(descr ""))
+  (lib (name w_conn_mkds)(type KiCad)(uri "$(KIPRJMOD)/lib/w_conn_mkds.pretty")(options "")(descr ""))
+  (lib (name w_conn_mpt)(type KiCad)(uri "$(KIPRJMOD)/lib/w_conn_mpt.pretty")(options "")(descr ""))
+  (lib (name LOGOS)(type KiCad)(uri "$(KIPRJMOD)/lib/LOGOS.pretty")(options "")(descr ""))
+  (lib (name Adafruit_FeatherWing)(type KiCad)(uri "$(KIPRJMOD)/lib/Adafruit_FeatherWing.pretty")(options "")(descr ""))
+  (lib (name TriSelectSolderJumper)(type KiCad)(uri "$(KIPRJMOD)/lib/TriSelectSolderJumper.pretty")(options "")(descr ""))
+  (lib (name MountingHole)(type KiCad)(uri "$(KIPRJMOD)/lib/MountingHole.pretty")(options "")(descr ""))
+)

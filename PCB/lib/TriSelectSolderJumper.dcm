@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GS3
+D 3-pin jumper/solder bridge
+K jumper solder bridge
+$ENDCMP
+#
+$CMP TriSolderJumper
+D 3-pin jumper/solder bridge
+K jumper solder bridge
+$ENDCMP
+#
+#End Doc Library
