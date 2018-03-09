@@ -244,6 +244,95 @@ Text GLabel 1700 2500 2    60   Input ~ 0
 GND
 Text GLabel 6000 4150 2    60   Input ~ 0
 VBATT
+$Comp
+L TriSolderJumper J5
+U 1 1 5AA09AD5
+P 5750 4000
+F 0 "J5" H 5800 4200 50  0000 C CNN
+F 1 "TriSolderJumper" H 5750 3750 50  0000 C CNN
+F 2 "TriSelectSolderJumper:TriSelectSolderJumper_CutTrace" H 5750 3705 50  0001 C CNN
+F 3 "" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 4000 2    60   Input ~ 0
+VLED
+Text GLabel 2750 5350 2    60   Input ~ 0
+GND
+$Comp
+L +5V #PWR01
+U 1 1 5AA0A813
+P 2050 900
+F 0 "#PWR01" H 2050 750 50  0001 C CNN
+F 1 "+5V" H 2050 1040 50  0000 C CNN
+F 2 "" H 2050 900 50  0001 C CNN
+F 3 "" H 2050 900 50  0001 C CNN
+	1    2050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5AA0A8E6
+P 2050 1300
+F 0 "#PWR02" H 2050 1050 50  0001 C CNN
+F 1 "GND" H 2050 1150 50  0000 C CNN
+F 2 "" H 2050 1300 50  0001 C CNN
+F 3 "" H 2050 1300 50  0001 C CNN
+	1    2050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5AA0A9BB
+P 3250 1200
+F 0 "#PWR03" H 3250 1050 50  0001 C CNN
+F 1 "+3.3V" H 3250 1340 50  0000 C CNN
+F 2 "" H 3250 1200 50  0001 C CNN
+F 3 "" H 3250 1200 50  0001 C CNN
+	1    3250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 5AA0AB81
+P 4900 1650
+F 0 "#PWR04" H 4900 1500 50  0001 C CNN
+F 1 "+BATT" H 4900 1790 50  0000 C CNN
+F 2 "" H 4900 1650 50  0001 C CNN
+F 3 "" H 4900 1650 50  0001 C CNN
+	1    4900 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 4000 0    60   Input ~ 0
+VEXT
+Text GLabel 6000 3850 2    60   Input ~ 0
+VUSB
+$Comp
+L Conn_01x02 J6
+U 1 1 5AA0B4C0
+P 5750 4500
+F 0 "J6" H 5750 4600 50  0000 C CNN
+F 1 "Conn_01x02" H 5750 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5750 4500 50  0001 C CNN
+F 3 "" H 5750 4500 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 4450 0    60   Input ~ 0
+VEXT
+$Comp
+L SW_Push SW1
+U 1 1 5AA0BC52
+P 1350 2500
+F 0 "SW1" H 1400 2600 50  0000 L CNN
+F 1 "SW_Push" H 1350 2440 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_KMR2" H 1350 2700 50  0001 C CNN
+F 3 "KMR221G LFS" H 1350 2700 50  0001 C CNN
+	1    1350 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 4650 0    60   Input ~ 0
+VUSB
 Wire Wire Line
 	2750 3850 2750 4250
 Wire Wire Line
@@ -407,134 +496,38 @@ Wire Wire Line
 	6000 4150 5900 4150
 Wire Wire Line
 	5900 4150 5900 4100
-$Comp
-L TriSolderJumper J5
-U 1 1 5AA09AD5
-P 5750 4000
-F 0 "J5" H 5800 4200 50  0000 C CNN
-F 1 "TriSolderJumper" H 5750 3750 50  0000 C CNN
-F 2 "TriSelectSolderJumper:TriSelectSolderJumper_CutTrace" H 5750 3705 50  0001 C CNN
-F 3 "" H 5750 4000 50  0001 C CNN
-	1    5750 4000
-	1    0    0    -1  
-$EndComp
-Text GLabel 6000 4000 2    60   Input ~ 0
-VLED
-Text GLabel 2750 5350 2    60   Input ~ 0
-GND
 Wire Wire Line
 	2650 5250 2650 5350
 Wire Wire Line
 	2650 5350 2750 5350
-$Comp
-L +5V #PWR01
-U 1 1 5AA0A813
-P 2050 900
-F 0 "#PWR01" H 2050 750 50  0001 C CNN
-F 1 "+5V" H 2050 1040 50  0000 C CNN
-F 2 "" H 2050 900 50  0001 C CNN
-F 3 "" H 2050 900 50  0001 C CNN
-	1    2050 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 900  2050 1000
 Connection ~ 2050 1000
-$Comp
-L GND #PWR02
-U 1 1 5AA0A8E6
-P 2050 1300
-F 0 "#PWR02" H 2050 1050 50  0001 C CNN
-F 1 "GND" H 2050 1150 50  0000 C CNN
-F 2 "" H 2050 1300 50  0001 C CNN
-F 3 "" H 2050 1300 50  0001 C CNN
-	1    2050 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 1300 2050 1200
 Connection ~ 2050 1200
-$Comp
-L +3.3V #PWR03
-U 1 1 5AA0A9BB
-P 3250 1200
-F 0 "#PWR03" H 3250 1050 50  0001 C CNN
-F 1 "+3.3V" H 3250 1340 50  0000 C CNN
-F 2 "" H 3250 1200 50  0001 C CNN
-F 3 "" H 3250 1200 50  0001 C CNN
-	1    3250 1200
-	1    0    0    -1  
-$EndComp
 Connection ~ 3000 1200
-$Comp
-L +BATT #PWR04
-U 1 1 5AA0AB81
-P 4900 1650
-F 0 "#PWR04" H 4900 1500 50  0001 C CNN
-F 1 "+BATT" H 4900 1790 50  0000 C CNN
-F 2 "" H 4900 1650 50  0001 C CNN
-F 3 "" H 4900 1650 50  0001 C CNN
-	1    4900 1650
-	1    0    0    -1  
-$EndComp
 Connection ~ 5150 1650
 Wire Wire Line
 	5900 4000 6000 4000
-Text GLabel 5350 4000 0    60   Input ~ 0
-VEXT
 Wire Wire Line
 	5500 4000 5350 4000
-Text GLabel 6000 3850 2    60   Input ~ 0
-VUSB
 Wire Wire Line
 	6000 3850 5900 3850
 Wire Wire Line
 	5900 3850 5900 3900
-$Comp
-L Conn_01x02 J6
-U 1 1 5AA0B4C0
-P 5750 4500
-F 0 "J6" H 5750 4600 50  0000 C CNN
-F 1 "Conn_01x02" H 5750 4300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5750 4500 50  0001 C CNN
-F 3 "" H 5750 4500 50  0001 C CNN
-	1    5750 4500
-	1    0    0    -1  
-$EndComp
-Text GLabel 5450 4450 0    60   Input ~ 0
-VEXT
 Wire Wire Line
 	5450 4450 5550 4450
 Wire Wire Line
 	5550 4450 5550 4500
-$Comp
-L SW_Push SW1
-U 1 1 5AA0BC52
-P 1350 2500
-F 0 "SW1" H 1400 2600 50  0000 L CNN
-F 1 "SW_Push" H 1350 2440 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_KMR2" H 1350 2700 50  0001 C CNN
-F 3 "KMR221G LFS" H 1350 2700 50  0001 C CNN
-	1    1350 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1050 2500 1150 2500
 Wire Wire Line
 	1550 2500 1700 2500
-Text GLabel 5450 4650 0    60   Input ~ 0
-VUSB
 Wire Wire Line
 	5450 4650 5550 4650
 Wire Wire Line
 	5550 4650 5550 4600
 Wire Wire Line
 	5050 1500 5050 2200
-Wire Wire Line
-	5500 4000 5500 3700
-Wire Wire Line
-	5500 3700 5950 3700
-Wire Wire Line
-	5950 3700 5950 4000
-Connection ~ 5950 4000
 $EndSCHEMATC
