@@ -129,13 +129,13 @@ $EndComp
 $Comp
 L R R1
 U 1 1 5A9AD929
-P 2900 4050
-F 0 "R1" V 2980 4050 50  0000 C CNN
-F 1 "200K" V 2900 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2830 4050 50  0001 C CNN
-F 3 "ERJ-3GEYJ331V" H 2900 4050 50  0001 C CNN
-	1    2900 4050
-	0    1    1    0   
+P 2750 4050
+F 0 "R1" V 2830 4050 50  0000 C CNN
+F 1 "200K" V 2750 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 2680 4050 50  0001 C CNN
+F 3 "ERJ-3GEYJ331V" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	-1   0    0    1   
 $EndComp
 $Comp
 L C C3
@@ -334,8 +334,6 @@ $EndComp
 Text GLabel 5450 4650 0    60   Input ~ 0
 VUSB
 Wire Wire Line
-	2750 3850 2750 4250
-Wire Wire Line
 	3050 4050 3250 4050
 Wire Wire Line
 	3050 4050 3050 4450
@@ -380,9 +378,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 4250 3450 4300
 Connection ~ 3450 4250
-Connection ~ 2750 4050
-Wire Wire Line
-	2800 3850 2750 3850
 Wire Wire Line
 	5950 1250 6050 1250
 Wire Wire Line
@@ -530,4 +525,13 @@ Wire Wire Line
 	5550 4650 5550 4600
 Wire Wire Line
 	5050 1500 5050 2200
+Wire Wire Line
+	2800 3850 2750 3850
+Wire Wire Line
+	2750 3850 2750 3900
+Wire Wire Line
+	2750 4200 2750 4250
+Wire Wire Line
+	2750 4200 3050 4200
+Connection ~ 3050 4200
 $EndSCHEMATC
