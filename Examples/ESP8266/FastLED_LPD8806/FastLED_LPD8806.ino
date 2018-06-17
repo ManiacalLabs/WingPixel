@@ -4,10 +4,10 @@
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
-#define DATA_PIN 11
+#define DATA_PIN 13
 // WingPixel uses the SPI CLK pin for clock output
 // so must be this pin!
-#define CLOCK_PIN 13
+#define CLOCK_PIN 14
 
 #define LEDTYPE LPD8806
 

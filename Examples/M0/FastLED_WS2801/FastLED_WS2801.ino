@@ -4,18 +4,18 @@
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
-#define DATA_PIN 11
+#define DATA_PIN 23
 // WingPixel uses the SPI CLK pin for clock output
 // so must be this pin!
-#define CLOCK_PIN 13
+#define CLOCK_PIN 24
 
-#define LEDTYPE LPD8806
+#define LEDTYPE WS2801
 
 //Typical color order for this LED type
 // If wrong, set back to RGB and the observer order on strip.
 // That order will be the correct order to place here.
 // i.e. if COLOR_ORDER set to RGB and output is B,G,G,R,R,R, set to BGR
-#define COLOR_ORDER BRG
+#define COLOR_ORDER RBG
 
 //decrease for testing over USB power
 #define BRIGHTNESS 64 // 25%
@@ -29,7 +29,7 @@ void setup() {
   color_pattern[2] = CRGB(0,0,255);
   color_pattern[3] = CRGB(255,255,255);
 
-  FastLED.addLeds<LEDTYPE,DATA_PIN,CLOCK_PIN,COLOR_ORDER,DATA_RATE_MHZ(4)>(leds, NUM_LEDS);
+  FastLED.addLeds<LEDTYPE,DATA_PIN,CLOCK_PIN,COLOR_ORDER,DATA_RATE_MHZ(1)>(leds, NUM_LEDS);
   FastLED.setBrightness(32);
 }
 

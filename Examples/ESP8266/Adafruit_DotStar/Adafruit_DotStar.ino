@@ -5,10 +5,10 @@
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
-#define DATA_PIN 16
+#define DATA_PIN 13
 // WingPixel uses the SPI CLK pin for clock output
 // so must be this pin!
-#define CLOCK_PIN 15
+#define CLOCK_PIN 14
 
 //Typical color order for this LED type
 // If wrong, set back to RGB and the observer order on strip.

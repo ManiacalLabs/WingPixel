@@ -5,7 +5,7 @@
 
 #define NUM_LEDS 10
 
-// WingPixel uses the SPI MISO pin for data output
+// WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
 #define DATA_PIN 16
 // WingPixel uses the SPI CLK pin for clock output

@@ -1,27 +1,22 @@
-#include <Adafruit_DotStar.h>
-#include <SPI.h>
+#include <Adafruit_NeoPixel.h>
 
 #define NUM_LEDS 10
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
-#define DATA_PIN 16
-// WingPixel uses the SPI CLK pin for clock output
-// so must be this pin!
-#define CLOCK_PIN 15
+#define DATA_PIN 13
 
 //Typical color order for this LED type
 // If wrong, set back to RGB and the observer order on strip.
 // That order will be the correct order to place here.
 // i.e. if COLOR_ORDER set to RGB and output is B,G,G,R,R,R, set to BGR
-#define COLOR_ORDER DOTSTAR_BGR
+#define COLOR_ORDER NEO_GRB
 
 //decrease for testing over USB power
 #define BRIGHTNESS 64 // 25%
 
 //Setup strip object with above defines
-Adafruit_DotStar strip = Adafruit_DotStar(
-  NUM_LEDS, DATA_PIN, CLOCK_PIN, COLOR_ORDER);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, DATA_PIN, COLOR_ORDER + NEO_KHZ800);
 
 uint32_t color_pattern[4] = {
   0xFF0000,
