@@ -3,7 +3,7 @@
 #define FASTLED_FORCE_SOFTWARE_SPI
 #include<FastLED.h>
 
-#define NUM_LEDS 10
+#define NUM_LEDS 12
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
@@ -33,7 +33,7 @@ void setup() {
   color_pattern[3] = CRGB(255,255,255);
 
   FastLED.addLeds<LEDTYPE,DATA_PIN,CLOCK_PIN,COLOR_ORDER,DATA_RATE_MHZ(4)>(leds, NUM_LEDS);
-  FastLED.setBrightness(32);
+  FastLED.setBrightness(BRIGHTNESS);
 }
 
 uint8_t c = 0;

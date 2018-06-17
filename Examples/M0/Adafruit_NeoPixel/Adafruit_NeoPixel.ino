@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 
-#define NUM_LEDS 10
+#define NUM_LEDS 12
 
 // WingPixel uses the SPI MOSI pin for data output
 // so must be this pin!
