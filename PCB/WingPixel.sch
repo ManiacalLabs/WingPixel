@@ -218,9 +218,9 @@ Text GLabel 3700 4850 2    60   Input ~ 0
 CLK
 Text GLabel 3700 4650 2    60   Input ~ 0
 DATA
-Text GLabel 3500 3400 2    60   Input ~ 0
+Text GLabel 4050 3400 2    60   Input ~ 0
 SCLK
-Text GLabel 3500 3550 2    60   Input ~ 0
+Text GLabel 4050 3550 2    60   Input ~ 0
 MOSI
 Text GLabel 1700 4850 0    60   Input ~ 0
 SCLK
@@ -401,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 2600 3250 3400
 Wire Wire Line
-	3250 3400 3500 3400
+	3250 3400 3550 3400
 Connection ~ 3250 2600
 Wire Wire Line
 	3150 3550 3150 2700
@@ -427,7 +427,7 @@ Wire Wire Line
 Wire Wire Line
 	2100 1000 1950 1000
 Wire Wire Line
-	3150 3550 3500 3550
+	3150 3550 3550 3550
 Wire Wire Line
 	3300 1600 2850 1600
 Wire Wire Line
@@ -534,4 +534,30 @@ Wire Wire Line
 Wire Wire Line
 	2750 4200 3050 4200
 Connection ~ 3050 4200
+$Comp
+L GS2 J7
+U 1 1 5B26FA07
+P 3750 3400
+F 0 "J7" V 3850 3550 50  0000 C CNN
+F 1 "GS2" V 3800 3200 50  0000 C CNN
+F 2 "Connectors:GS2" V 3824 3400 50  0001 C CNN
+F 3 "" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GS2 J8
+U 1 1 5B26FAFC
+P 3750 3550
+F 0 "J8" V 3850 3700 50  0000 C CNN
+F 1 "GS2" V 3800 3350 50  0000 C CNN
+F 2 "Connectors:GS2" V 3824 3550 50  0001 C CNN
+F 3 "" H 3750 3550 50  0001 C CNN
+	1    3750 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 3400 4050 3400
+Wire Wire Line
+	3950 3550 4050 3550
 $EndSCHEMATC
