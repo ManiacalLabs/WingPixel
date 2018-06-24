@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.635)
+    (last_trace_width 0.25)
     (user_trace_width 0.2032)
     (user_trace_width 0.635)
     (user_trace_width 1.27)
@@ -1160,13 +1160,13 @@
       (net 34 "Net-(J3-Pad11)"))
   )
 
-  (module Connectors:GS2 (layer F.Cu) (tedit 586134A1) (tstamp 5B26F995)
+  (module Connectors:GS2 (layer F.Cu) (tedit 5B26FB5B) (tstamp 5B26F995)
     (at 72.4 42.4 270)
     (descr "2-pin solder bridge")
     (tags "solder bridge")
     (path /5B26FAFC)
     (attr smd)
-    (fp_text reference J8 (at 1.78 0 360) (layer F.SilkS)
+    (fp_text reference J8 (at 1.78 0 360) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value GS2 (at -1.8 0 360) (layer F.Fab)
@@ -1216,7 +1216,7 @@
   (gr_text RST (at 48.006 30.48 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.1778)))
   )
-  (gr_text "Maniacal Labs\nWingPixel" (at 54.2 43.4) (layer F.SilkS)
+  (gr_text "Maniacal Labs\nWingPixel" (at 53.8 43.4) (layer F.SilkS)
     (effects (font (size 1.143 1.143) (thickness 0.1778)))
   )
   (gr_text "VLED Jumper\nSee Manual\nCHOOSE ONLY ONE\nTO POWER LEDs" (at 56.388 39.243) (layer B.SilkS)
