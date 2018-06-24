@@ -8,4 +8,5 @@
   (lib (name Adafruit_FeatherWing)(type KiCad)(uri "$(KIPRJMOD)/lib/Adafruit_FeatherWing.pretty")(options "")(descr ""))
   (lib (name TriSelectSolderJumper)(type KiCad)(uri "$(KIPRJMOD)/lib/TriSelectSolderJumper.pretty")(options "")(descr ""))
   (lib (name MountingHole)(type KiCad)(uri "$(KIPRJMOD)/lib/MountingHole.pretty")(options "")(descr ""))
+  (lib (name ML_CutTrace)(type KiCad)(uri "$(KIPRJMOD)/lib/ML_CutTrace.pretty")(options "")(descr ""))
 )
